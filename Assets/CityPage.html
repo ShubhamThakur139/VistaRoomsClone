@@ -23,6 +23,11 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.vistarooms.com/assets/desktop/fav/favicon.ico"
+    />
     <style>
       * {
         margin: 0;
@@ -32,345 +37,105 @@
         font-family: "Red Hat Text", sans-serif;
       }
       #main {
-        width: 80%;
+        padding-top: 10px;
+        width: 83%;
         margin: auto;
+      }
+      .card {
+        cursor: pointer;
+        box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+      }
+      .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+      }
+      input {
+        background-color: #fff !important;
+        border: 1px solid #4a4b4c !important;
+        font-size: 18px !important;
+      }
+      .sticky_nav {
+        padding: 10px 0;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 16%);
       }
     </style>
   </head>
   <body>
+    <section class="sticky_nav">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 text-capitalize"
+            style="
+              margin-bottom: 9px;
+              color: #535353;
+              padding-left: 5px;
+              font-size: 14px;
+            "
+          >
+            <a href="" style="text-decoration: none; color: #888888">Home ></a>
+            <span class="pl-1">Villas in Shimla</span>
+          </div>
+          <div class="px-1 col-3">
+            <div class="search-bar">
+              <input
+                type="text"
+                class="w-100 text-start text-capitalize input-group-text"
+                placeholder="Shimla, Himachal Pradesh"
+              />
+            </div>
+          </div>
+          <div class="px-1 col-3">
+            <input
+              type="text"
+              placeholder="Check-in/Check-out"
+              class="w-100 text-start text-capitalize input-group-text"
+            />
+          </div>
+          <div class="px-1 col"></div>
+          <div class="px-1 col"></div>
+          <div class="px-1 col-3"></div>
+        </div>
+      </div>
+    </section>
+
     <div id="main">
       <h3>Shimla, Himachal Pradesh</h3>
       <p>Explore the best villas around.</p>
       <div id="container-fluid">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card pointer-event~">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5>Wood House Retreat</h5>
-                <p>Shimla, Himachal Pradesh</p>
-                <h6>2 Bedrooms | 3 Bathrooms</h6>
-                <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div>
-                    <h5>₹ 16,000<span>/ night</span></h5>
-                    <small>(excl. taxes & charges)</small>
-                  </div>
-                  <div>
-                    <span>
-                      <i class="fa fa-angle-right font-20"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <a href="">
-              <div class="card shadow-md">
-                <img
-                  src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col">
-            <a href="">
-              <div class="card">
-                <img
-                  src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img
-                src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+          id="card_holder"
+        ></div>
       </div>
     </div>
 
     <script src="/Js/CityPage.js"></script>
   </body>
 </html>
+
+<!-- <div class="col">
+  <div class="card">
+    <img
+      src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5>Wood House Retreat</h5>
+      <p>Shimla, Himachal Pradesh</p>
+      <h6>2 Bedrooms | 3 Bathrooms</h6>
+      <hr />
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h5>₹ 16,000<span>/ night</span></h5>
+          <small>(excl. taxes & charges)</small>
+        </div>
+        <div>
+          <span>
+            <i class="fa fa-angle-right font-20"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
