@@ -48,14 +48,22 @@
       .card:hover {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
       }
-      input {
+      input,
+      select {
         background-color: #fff !important;
         border: 1px solid #4a4b4c !important;
         font-size: 18px !important;
+        outline: none;
       }
       .sticky_nav {
         padding: 10px 0;
         box-shadow: 0 1px 2px rgb(0 0 0 / 16%);
+      }
+      select {
+        cursor: pointer;
+      }
+      option.line {
+        border-bottom: 1px dotted #000 !important;
       }
     </style>
   </head>
@@ -91,9 +99,45 @@
               class="w-100 text-start text-capitalize input-group-text"
             />
           </div>
-          <div class="px-1 col"></div>
-          <div class="px-1 col"></div>
-          <div class="px-1 col-3"></div>
+          <div class="px-1 col-2">
+            <div class="w-100">
+              <input
+                type="text"
+                name=""
+                class="w-100 text-start text-capitalize input-group-text"
+                id=""
+                placeholder="Filters"
+              />
+            </div>
+          </div>
+          <div class="px-1 col-2">
+            <div class="w-100">
+              <input
+                type="text"
+                name=""
+                class="w-100 text-start text-capitalize input-group-text"
+                id=""
+                placeholder="Filters"
+              />
+            </div>
+          </div>
+          <div class="px-1 col-2">
+            <select
+              name=""
+              id=""
+              placeholder=""
+              class="input-group-text text-start"
+              style="
+                font-size: 18px;
+                background: rgb(143, 128, 128);
+                appearance: none;
+              "
+            >
+              <option value="" class="line">Sort By</option>
+              <option value="">Price - Low to High</option>
+              <option value="">Price - High to Low</option>
+            </select>
+          </div>
         </div>
       </div>
     </section>
