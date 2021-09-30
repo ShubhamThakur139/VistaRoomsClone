@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Header
+    </title>
+    
+    <link rel = "icon" href = 
+"https://d3ca48y7jz4ig.cloudfront.net/companies/logos/42959/vista_rooms_thumb.png?1567683600" 
+        type = "image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Red Hat Text", sans-serif;
+      }
+      a{
+        outline: none;
+      }
+      #ULnavitems{
+        width: 58%;
+      }
+      #ULnavitems>li{
+        width:30%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Starting  -->
+    <!-- https://www.vistarooms.com/assets/desktop/WHITE.svg (white logo) -->
+    <!-- https://www.vistarooms.com/assets/desktop/images/discount_black.svg  (OFFERS icon) -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-w shadow-sm topbar">
+        <div class="container px-5">
+          <a class="navbar-brand" href="#"><img src="https://www.vistarooms.com/assets/desktop/RED.svg" alt=""/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="ULnavitems">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CITIES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">U.A.E</a></li>
+                  <li><a class="dropdown-item" href="#">Maharashtra</a></li>
+                  <li><a class="dropdown-item" href="#">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#">Goa</a></li>
+                  <li><a class="dropdown-item" href="#">Himachal Pradesh</a></li>
+                  <li><a class="dropdown-item" href="#">Punjab</a></li>
+                  <li><a class="dropdown-item" href="#">Uttrakhand</a></li>
+                  <li><a class="dropdown-item" href="#">Karnataka</a></li>
+                  <li><a class="dropdown-item" href="#">Kerala</a></li>
+                  <li><a class="dropdown-item" href="#">TamilNadu</a></li>
+                  <li><a class="dropdown-item" href="#">Gujrat</a></li>
+                  <li><a class="dropdown-item" href="#">Rajashthan</a></li>
+                  <li><a class="dropdown-item" href="#">Sikkim</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-dark" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EXPLORE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Plan an event</a></li>
+                  <li><a class="dropdown-item" href="#">Corporate Offsite</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#">PARTNER WITH US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >
+                  <img src="https://www.vistarooms.com/assets/desktop/images/discount_black.svg" alt="" width="20" height="30">
+                  OFFERS
+                </a>
+              </li>
+            </ul>
+              <button class="btn btn-outline-secondary">
+                <img src="https://www.vistarooms.com/assets/desktop/images/user_icon_black.svg" alt="">
+                Login
+              </button>
+          </div>
+        </div>
+      </nav>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
+
+<script >
+  let btn = document.getElementById('navbarDropdown');
+  btn.addEventListener('mouseover',()=>{
+    console.log('HEllo');
+    document.getElementById('navbarDropdown').click()
+  })
+  btn.addEventListener('mouseleave',()=>{
+    console.log('HEllo boka');
+    document.getElementById('navbarDropdown').click()
+  })
+
+  let btn2 = document.getElementById('navbarDropdown2');
+  btn2.addEventListener('mouseover',()=>{
+    console.log('HEll');
+    document.getElementById('navbarDropdown2').click()
+  })
+  btn2.addEventListener('mouseleave',()=>{
+    console.log('HEll bok');
+    document.getElementById('navbarDropdown2').click()
+  })
+
+</script>
+
