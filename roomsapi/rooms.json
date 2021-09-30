@@ -406,6 +406,33 @@
       "userPass": "123456789",
       "rescidentialCity": "LUDHIANA",
       "id": 3
+    },
+    {
+      "firstName": "Ankush",
+      "lastName": "Thakur",
+      "mobile": "0836040315",
+      "userEmail": "st328745@gmail.com",
+      "userPass": "dbsjfbjbdlfa",
+      "rescidentialCity": "LUDHIANA",
+      "id": 4
+    },
+    {
+      "firstName": "Ankush",
+      "lastName": "Thakur",
+      "mobile": "8360403156",
+      "userEmail": "shubham@gmail.com",
+      "userPass": "aaaaaaaaaaaaaaaaa",
+      "rescidentialCity": "LUDHIANA",
+      "id": 5
+    },
+    {
+      "firstName": "Ankush",
+      "lastName": "Thakur",
+      "mobile": "6283830091",
+      "userEmail": "shubham1@gmail.com",
+      "userPass": "aaaaaaaaaaaa",
+      "rescidentialCity": "LUDHIANA",
+      "id": 6
     }
   ]
 }
