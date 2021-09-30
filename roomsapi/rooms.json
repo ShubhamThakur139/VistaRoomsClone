@@ -397,6 +397,15 @@
       "userPass": "123456789",
       "rescidentialCity": "LUDHIANA",
       "id": 2
+    },
+    {
+      "firstName": "Ankush",
+      "lastName": "Thakur",
+      "mobile": "8360403156",
+      "userEmail": "at328745@gmail.com",
+      "userPass": "123456789",
+      "rescidentialCity": "LUDHIANA",
+      "id": 3
     }
   ]
 }

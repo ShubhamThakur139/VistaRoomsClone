@@ -49,6 +49,35 @@ getData();
 
 // Sign up Functionality Start
 
+// function to check is email exist or not
+async function isEmailExist(email) {
+  let isTrue = false;
+  let res = await fetch("http://localhost:3000/users");
+  let data = await res.json();
+  data.forEach(({ userEmail }) => {
+    if (email === userEmail) {
+      isTrue = true;
+      return isTrue;
+    }
+  });
+  return isTrue;
+}
+
+// function to check is mobile number exist or not
+async function isPhoneExist(umobile) {
+  let isTrue = false;
+  let res = await fetch("http://localhost:3000/users");
+  let data = await res.json();
+  data.forEach(({ mobile }) => {
+    if (umobile === mobile) {
+      isTrue = true;
+      return isTrue;
+    }
+  });
+  // isTrue = false;
+  return isTrue;
+}
+
 // constructor function to create data skelton
 function userDetails(f_name, l_name, mobile, u_email, u_pass, res_city) {
   this.firstName = f_name;
@@ -74,26 +103,49 @@ async function addUser(event) {
   } else if (u_pass.length < 8) {
     alert("password length is too short");
     document.getElementById("u_pass").value = "";
+  } else if (isPhoneExist(mobile)) {
+    alert("Mobile Number already exist");
+    document.getElementById("mobile").value = "";
   } else if (isEmailExist(u_email)) {
     alert("Email already exist");
     document.getElementById("u_email").value = "";
+  } else {
+    // creating user details object
+    let data = new userDetails(
+      f_name,
+      l_name,
+      mobile,
+      u_email,
+      u_pass,
+      res_city
+    );
+    // setting url into url variable
+    let url = "http://localhost:3000/users";
+    // post data into api
+    const response = await fetch(url, {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, *cors, same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "same-origin", // include, *same-origin, omit
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow", // manual, *follow, error
+      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    });
+    let data1 = await response.json();
   }
-
-  let data = new userDetails(f_name, l_name, mobile, u_email, u_pass, res_city);
-  let url = "http://localhost:3000/users";
-  const response = await fetch(url, {
-    method: "POST", // *GET, POST, PUT, DELETE, etc.
-    mode: "cors", // no-cors, *cors, same-origin
-    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: "same-origin", // include, *same-origin, omit
-    headers: {
-      "Content-Type": "application/json",
-    },
-    redirect: "follow", // manual, *follow, error
-    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data), // body data type must match "Content-Type" header
-  });
-  let data1 = await response.json();
 }
 
 // Sign up functionality start
+
+// Login functionality start
+
+async function loginUser(e) {
+  e.preventDefault();
+  let login_email = document.getElementById("login_email");
+  let login_pass = document.getElementById("login_pass");
+}
+
+// Login functionality end
