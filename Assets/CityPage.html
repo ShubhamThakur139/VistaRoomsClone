@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.vistarooms.com/assets/desktop/fav/favicon.ico"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Red Hat Text", sans-serif;
+      }
+
+      /* navbar styling start */
+      a {
+        outline: none;
+      }
+      /* #ULnavitems {
+        width: 58%;
+      }  */
+      #ULnavitems > li {
+        margin-right: 10px !important;
+      }
+      /* navbar styling end */
+
+      #main {
+        padding-top: 10px;
+        width: 83%;
+        margin: auto;
+      }
+      .card {
+        cursor: pointer;
+        box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+      }
+      .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+      }
+      input,
+      select {
+        background-color: #fff !important;
+        border: 1px solid #4a4b4c !important;
+        font-size: 18px !important;
+        outline: none;
+      }
+      .sticky_nav {
+        padding: 10px 0;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 16%);
+      }
+      select {
+        cursor: pointer;
+      }
+      option {
+        border-bottom: 22px solid #000 !important;
+      }
+
+      /* footer styling start */
+       a{
+            text-decoration: none !important;
+            color: black !important;
+        }
+        #last-section-pink{
+            background-color: #df495b;
+            color: white;
+        }
+      .fa{
+            color: white !important;
+        }
+        .main-footer{
+          padding-top: 25px;
+        }
+      /* footer styling end  */
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar start  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-w shadow-sm topbar">
+      <div class="container px-5">
+        <a class="navbar-brand" href="#"
+          ><img src="https://www.vistarooms.com/assets/desktop/RED.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="ULnavitems">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle link-dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CITIES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">U.A.E</a></li>
+                <li><a class="dropdown-item" href="#">Maharashtra</a></li>
+                <li><a class="dropdown-item" href="#">Delhi</a></li>
+                <li><a class="dropdown-item" href="#">Goa</a></li>
+                <li><a class="dropdown-item" href="#">Himachal Pradesh</a></li>
+                <li><a class="dropdown-item" href="#">Punjab</a></li>
+                <li><a class="dropdown-item" href="#">Uttrakhand</a></li>
+                <li><a class="dropdown-item" href="#">Karnataka</a></li>
+                <li><a class="dropdown-item" href="#">Kerala</a></li>
+                <li><a class="dropdown-item" href="#">TamilNadu</a></li>
+                <li><a class="dropdown-item" href="#">Gujrat</a></li>
+                <li><a class="dropdown-item" href="#">Rajashthan</a></li>
+                <li><a class="dropdown-item" href="#">Sikkim</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle link-dark"
+                href="#"
+                id="navbarDropdown2"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                EXPLORE
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Plan an event</a></li>
+                <li><a class="dropdown-item" href="#">Corporate Offsite</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#">PARTNER WITH US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  src="https://www.vistarooms.com/assets/desktop/images/discount_black.svg"
+                  alt=""
+                  width="20"
+                />
+                OFFERS
+              </a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-secondary">
+            <img
+              src="https://www.vistarooms.com/assets/desktop/images/user_icon_black.svg"
+              alt=""
+            />
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end  -->
+
+    <!-- sticky nav start -->
+    <section class="sticky_nav">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 text-capitalize"
+            style="
+              margin-bottom: 9px;
+              color: #535353;
+              padding-left: 5px;
+              font-size: 14px;
+            "
+          >
+            <a href="" style="text-decoration: none; color: #888888">Home ></a>
+            <span class="pl-1">Villas in Shimla</span>
+          </div>
+          <div class="px-1 col-3">
+            <div class="search-bar">
+              <input
+                type="text"
+                class="w-100 text-start text-capitalize input-group-text"
+                placeholder="Shimla, Himachal Pradesh"
+              />
+            </div>
+          </div>
+          <div class="px-1 col-3">
+            <input
+              type="text"
+              placeholder="Check-in/Check-out"
+              class="w-100 text-start text-capitalize input-group-text"
+            />
+          </div>
+          <div class="px-1 col-2">
+            <div class="w-100">
+              <input
+                type="text"
+                name=""
+                class="w-100 text-start text-capitalize input-group-text"
+                id=""
+                placeholder="Filters"
+              />
+            </div>
+          </div>
+          <div class="px-1 col-2">
+            <div class="w-100">
+              <input
+                type="text"
+                name=""
+                class="w-100 text-start text-capitalize input-group-text"
+                id=""
+                placeholder="Filters"
+              />
+            </div>
+          </div>
+          <div class="px-1 col-2">
+            <select
+              name=""
+              id=""
+              placeholder=""
+              class="input-group-text text-start"
+              style="
+                font-size: 18px;
+                background: rgb(143, 128, 128);
+                appearance: none;
+              "
+            >
+              <option value="" class="line">Sort By</option>
+              <option value="">Price - Low to High</option>
+              <option value="">Price - High to Low</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sticky nav end -->
+
+    <!-- Dynamically villa data show start -->
+    <div id="main">
+      <h3>Shimla, Himachal Pradesh</h3>
+      <p>Explore the best villas around.</p>
+      <div id="container-fluid">
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+          id="card_holder"
+        ></div>
+      </div>
+    </div>
+    <!-- Dynamically villa data show end -->
+
+    <!-- Footer start  -->
+    <section class="mt-5" style="background-color: #F9F9F9; border-bottom: 1px solid #00000014;">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <ul class="footer-ul" style="list-style: none;">
+                      <!-- p1-16-redhat-medium -->
+                      <li class="">
+                          <h6 class="mt-4 pt-4"> POPULAR DESTINATION TO RENT A HOLIDAY HOME IN INDIA </h6>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row mt-2 pb-3">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a target="_blank" class="" href="">Bungalows in Lonavala</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href=""> Bungalows in Igatpuri</a>
+                      </li>
+                      <li class="mt-3">
+                          <a href="" target="_blank"  class="">Bungalows in Alibaug</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Bungalows in Karjat</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Bungalows in Ahmedabad</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a target="_blank" class="" href="">Cottages in Manali</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Cottages in Mussoorie</a>
+                      </li>
+                      <li class="mt-3">
+                          <a href="" target="_blank"  class="">Cottages in Shimla</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Cottages in Coorg</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Cottages in Wayanad</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a target="_blank" class="" href="">Luxury Villas in Bangalore</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Luxury villas in Kochi</a>
+                      </li>
+                      <li class="mt-3">
+                          <a href="" target="_blank"  class="">Luxury Villas in Goa</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Luxury Villas in Chennai</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Luxury Villas in Kasauli</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a target="_blank" class="" href="">Homestay in Ooty</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Homestay in Kodaikanal</a>
+                      </li>
+                      <li class="mt-3">
+                          <a href="" target="_blank"  class="">Homestay in Jaipur</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Homestay in Udaipur</a>
+                      </li>
+                      <li class="mt-3">
+                          <a target="_blank" class="" href="">Homestay in Gangtok</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+    </section>
+    <section class="main-footer" style="background-color: #F9F9F9; border-bottom: 1px solid #00000014;">
+      <div class="container">
+          <div class="row pt-30 pb-35">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a>QUICK LINKS</a>
+                      </li>
+                  </ul>
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a target="_blank" class="" href="/offers">Offers</a>
+                      </li>
+                      <li class="mt-2">
+                          <a target="_blank" class="" href="/faq"> FAQs</a>
+                      </li>
+                      <li class="mt-2">
+                          <a href="https://www.vistarooms.com/blog/" target="_blank" rel="noopener" class="">Blogs</a>
+                      </li>
+                      <li class="mt-2">
+                          <a target="_blank" class="" href="/termsofservices">Terms &amp; Services</a>
+                      </li>
+                      <li class="mt-2">
+                          <a target="_blank" class="" href="/sitemap">Sitemap</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                  <ul class="footer-ul" style="list-style: none;">
+                      <!-- p1-16-redhat-medium -->
+                      <li class="">
+                          <a>CONTACT US</a>
+                      </li>
+                  </ul>
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a target="_blank" class="" href="/partner-with-us">Partner With Us</a>
+                      </li>
+                      <li class="mt-2">
+                          <a target="_blank" class="" href="/connect-with-us">Connect With Us</a>
+                      </li>
+                      <li class="mt-2">
+                          <a href="mailto:partnership@vistarooms.com" class="">partnership@vistarooms.com</a>
+                      </li>
+                      <li class="mt-2">
+                          <a href="mailto:stay@vistarooms.com" class="">stay@vistarooms.com</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a>VISTA CULTURE</a>
+                      </li>
+                  </ul>
+                  <ul class="footer-ul" style="list-style: none;">
+                      <li class="">
+                          <a target="_blank" class="" href="/about-us">About us</a>
+                      </li>
+                      <li class="mt-2">
+                          <a target="_blank" class="" href="/join-us">Join Us</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                  
+              </div>
+          </div>
+      </div>
+    </section>
+<!-- © 2021 Stay Vista Pvt. Ltd. All rights reserved -->
+    <footer>
+      <section id="last-section-pink">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 pt-2">
+                    <h6 class=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2021 Stay Vista Pvt. Ltd. All rights reserved</h6>
+                </div>
+                <div class="col-6" style="text-align: end;">
+                    <a href="https://www.instagram.com/vistarooms/" target="_blank">
+                        <button class="btn scroll-btn">
+                            <i class="fa fa-instagram"></i>
+                        </button>
+                    </a>
+                    <a href="https://twitter.com/Vista_Rooms" target="_blank">
+                        <button class="btn scroll-btn">
+                            <i class="fa fa-twitter"></i>
+                        </button>
+                    </a>
+                    <a href="https://www.facebook.com/vistarooms/" target="_blank">
+                        <button class="btn scroll-btn">
+                            <i class="fa fa-facebook-f"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer end  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Js/CityPage.js"></script>
+  </body>
+</html>
+
+<!-- <div class="col">
+  <div class="card">
+    <img
+      src="https://img.vistarooms.com/gallery/3-rooms-on-gf-at-the-half-house-20e268.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5>Wood House Retreat</h5>
+      <p>Shimla, Himachal Pradesh</p>
+      <h6>2 Bedrooms | 3 Bathrooms</h6>
+      <hr />
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h5>₹ 16,000<span>/ night</span></h5>
+          <small>(excl. taxes & charges)</small>
+        </div>
+        <div>
+          <span>
+            <i class="fa fa-angle-right font-20"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
