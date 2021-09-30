@@ -93,12 +93,18 @@
         color: white;
       }
       
+      .c_button:hover {
+        background: #ff5267;
+        color: rgba(255, 255, 255, 0.89);
+      }
+
       .modal_p{
         font-size: 14px;
       }
       .modal_p span, .signup_P a{
         cursor: pointer;
         color: #df495b !important;
+        font-weight: 500;
       }
       /* modal styling end  */
 
@@ -218,7 +224,7 @@
     </nav>
     <!-- Navbar end  -->
 
-    <!-- Modal -->
+    <!-- Login Modal -->
     <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content px-4">
@@ -258,7 +264,7 @@
           <div class="modal-body px-0 ">
             <h5 class="modal-title mb-3" id="exampleModalLabel">Join Vista Rooms</h5>
             <p>*indicates mandatory field</p>
-            <form action="">
+            <form onsubmit="addUser(event)">
               <div class="mb-3">
                 <label for="f_name" class="form-label">First Name*</label>
                 <input type="text" id="f_name" class="form-control" required placeholder="Enter your first name">
@@ -284,7 +290,7 @@
                 <input type="text" id="res_city" class="form-control" required placeholder="Enter your residential city">
               </div>
               <p class="modal_p">By continuing, I agree to the <span>T&C</span> and <span>Privacy Policy</span> of Vista Rooms.</p>
-              <button class="c_button my-2">Continue</button>
+              <button type="submit" class="c_button my-2">Continue</button>
             </form>
           </div>
           <div class="modal-footer justify-content-start ">

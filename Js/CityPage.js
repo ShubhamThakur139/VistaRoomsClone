@@ -1,7 +1,6 @@
-// console.log("heloo");
-
 let card_holder = document.getElementById("card_holder");
 
+// appending data to webpage by DOM
 function appendData(data) {
   data.forEach((element) => {
     let col = document.createElement("div");
@@ -39,7 +38,7 @@ function appendData(data) {
     card_holder.append(col);
   });
 }
-
+// getting data through api
 async function getData() {
   let data = await fetch("http://localhost:3000/villas");
   let res = await data.json();
@@ -48,46 +47,53 @@ async function getData() {
 
 getData();
 
-// function appendData(data) {
-//   data.forEach((element) => {
-//     console.log(element);
-//     // col div
-//     let col = document.createElement("div");
-//     col.setAttribute("class", "col");
-//     // card div
-//     let card = document.createElement("div");
-//     card.setAttribute("class", "card");
-//     // img element
-//     let img = document.createElement("img");
-//     img.setAttribute("class", "card-img-top");
-//     img.src = `${element.img1}`;
-//     // card body
-//     let card_body = document.createElement("div");
-//     card_body.setAttribute("class", "card-body");
-//     // card body elements
-//     // villa_name
-//     let villa_name = document.createElement("h5");
-//     villa_name.textContent = element.name;
-//     // location
-//     let location = document.createElement("h5");
-//     location.textContent = element.location;
-//     // rooms
-//     let rooms = document.createElement("h5");
-//     rooms.textContent = element.rooms;
-//     // line horizontal
-//     let hr = document.createElement("hr");
-//     // other div
-//     let indiv = document.createElement("div");
-//     indiv.setAttribute(
-//       "class",
-//       "d-flex justify-content-between align-items-center"
-//     );
-//     // indiv childs
+// Sign up Functionality Start
 
-//     // appending elements
-//     col.appendChild(card);
-//     card.append(img, card_body);
-//     card_body.append(villa_name, location, rooms, hr, indiv);
-//     card_holder.append(col);
-//   });
-// }
+// constructor function to create data skelton
+function userDetails(f_name, l_name, mobile, u_email, u_pass, res_city) {
+  this.firstName = f_name;
+  this.lastName = l_name;
+  this.mobile = mobile;
+  this.userEmail = u_email;
+  this.userPass = u_pass;
+  this.rescidentialCity = res_city;
+}
+
+// add user to database
+async function addUser(event) {
+  event.preventDefault();
+  let f_name = document.getElementById("f_name").value;
+  let l_name = document.getElementById("l_name").value;
+  let mobile = document.getElementById("mobile").value;
+  let u_email = document.getElementById("u_email").value;
+  let u_pass = document.getElementById("u_pass").value;
+  let res_city = document.getElementById("res_city").value;
+  if (mobile.length != 10) {
+    alert("Length should be equal to 10");
+    document.getElementById("mobile").value = "";
+  } else if (u_pass.length < 8) {
+    alert("password length is too short");
+    document.getElementById("u_pass").value = "";
+  } else if (isEmailExist(u_email)) {
+    alert("Email already exist");
+    document.getElementById("u_email").value = "";
+  }
+
+  let data = new userDetails(f_name, l_name, mobile, u_email, u_pass, res_city);
+  let url = "http://localhost:3000/users";
+  const response = await fetch(url, {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    mode: "cors", // no-cors, *cors, same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "same-origin", // include, *same-origin, omit
+    headers: {
+      "Content-Type": "application/json",
+    },
+    redirect: "follow", // manual, *follow, error
+    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  let data1 = await response.json();
+}
+
+// Sign up functionality start
