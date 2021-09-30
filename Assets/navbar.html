@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Header
-    </title>
-    
-    <link rel = "icon" href = 
-"https://d3ca48y7jz4ig.cloudfront.net/companies/logos/42959/vista_rooms_thumb.png?1567683600" 
-        type = "image/x-icon">
+    <title>Header</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.vistarooms.com/assets/desktop/fav/favicon.ico"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,99 +32,360 @@
         -webkit-font-smoothing: antialiased;
         font-family: "Red Hat Text", sans-serif;
       }
-      a{
+      a {
         outline: none;
       }
-      #ULnavitems{
-        width: 58%;
+      #ULnavitems > li {
+        margin-right: 10px !important;
       }
-      #ULnavitems>li{
-        width:30%;
+      /* modal styling start  */
+      .c_button {
+        width: 100%;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-radius: 3.5px;
+        background: #df495b;
+        font-size: 17px;
+        padding: 5px 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
       }
+
+      .c_button:hover {
+        background: #ff5267;
+        color: rgba(255, 255, 255, 0.89);
+      }
+
+      .modal_p {
+        font-size: 14px;
+      }
+      .modal_p span,
+      .signup_P a {
+        cursor: pointer;
+        color: #df495b !important;
+        font-weight: 500;
+      }
+      /* modal styling end  */
     </style>
   </head>
   <body>
     <!-- Navbar Starting  -->
     <!-- https://www.vistarooms.com/assets/desktop/WHITE.svg (white logo) -->
     <!-- https://www.vistarooms.com/assets/desktop/images/discount_black.svg  (OFFERS icon) -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-w shadow-sm topbar">
-        <div class="container px-5">
-          <a class="navbar-brand" href="#"><img src="https://www.vistarooms.com/assets/desktop/RED.svg" alt=""/></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav
+      class="
+        sticky-top
+        navbar navbar-expand-lg navbar-light
+        bg-white
+        shadow-sm
+        topbar
+      "
+    >
+      <div class="container px-5">
+        <a class="navbar-brand" href="#"
+          ><img src="https://www.vistarooms.com/assets/desktop/RED.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="ULnavitems">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle link-dark"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CITIES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">U.A.E</a></li>
+                <li><a class="dropdown-item" href="#">Maharashtra</a></li>
+                <li><a class="dropdown-item" href="#">Delhi</a></li>
+                <li><a class="dropdown-item" href="#">Goa</a></li>
+                <li><a class="dropdown-item" href="#">Himachal Pradesh</a></li>
+                <li><a class="dropdown-item" href="#">Punjab</a></li>
+                <li><a class="dropdown-item" href="#">Uttrakhand</a></li>
+                <li><a class="dropdown-item" href="#">Karnataka</a></li>
+                <li><a class="dropdown-item" href="#">Kerala</a></li>
+                <li><a class="dropdown-item" href="#">TamilNadu</a></li>
+                <li><a class="dropdown-item" href="#">Gujrat</a></li>
+                <li><a class="dropdown-item" href="#">Rajashthan</a></li>
+                <li><a class="dropdown-item" href="#">Sikkim</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle link-dark"
+                href="#"
+                id="navbarDropdown2"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                EXPLORE
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Plan an event</a></li>
+                <li><a class="dropdown-item" href="#">Corporate Offsite</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="#">PARTNER WITH US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  src="https://www.vistarooms.com/assets/desktop/images/discount_black.svg"
+                  alt=""
+                  width="20"
+                />
+                OFFERS
+              </a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#LoginModal"
+          >
+            <img
+              src="https://www.vistarooms.com/assets/desktop/images/user_icon_black.svg"
+              alt=""
+            />
+            Login
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="ULnavitems">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle link-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  CITIES
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">U.A.E</a></li>
-                  <li><a class="dropdown-item" href="#">Maharashtra</a></li>
-                  <li><a class="dropdown-item" href="#">Delhi</a></li>
-                  <li><a class="dropdown-item" href="#">Goa</a></li>
-                  <li><a class="dropdown-item" href="#">Himachal Pradesh</a></li>
-                  <li><a class="dropdown-item" href="#">Punjab</a></li>
-                  <li><a class="dropdown-item" href="#">Uttrakhand</a></li>
-                  <li><a class="dropdown-item" href="#">Karnataka</a></li>
-                  <li><a class="dropdown-item" href="#">Kerala</a></li>
-                  <li><a class="dropdown-item" href="#">TamilNadu</a></li>
-                  <li><a class="dropdown-item" href="#">Gujrat</a></li>
-                  <li><a class="dropdown-item" href="#">Rajashthan</a></li>
-                  <li><a class="dropdown-item" href="#">Sikkim</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle link-dark" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  EXPLORE
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Plan an event</a></li>
-                  <li><a class="dropdown-item" href="#">Corporate Offsite</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-dark" href="#">PARTNER WITH US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >
-                  <img src="https://www.vistarooms.com/assets/desktop/images/discount_black.svg" alt="" width="20" height="30">
-                  OFFERS
-                </a>
-              </li>
-            </ul>
-              <button class="btn btn-outline-secondary">
-                <img src="https://www.vistarooms.com/assets/desktop/images/user_icon_black.svg" alt="">
-                Login
-              </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="LoginModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content px-4">
+          <div class="modal-header border-0 px-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body px-0">
+            <h5 class="modal-title mb-3" id="exampleModalLabel">
+              Login with mobile number
+            </h5>
+            <form onsubmit="loginUser(event)">
+              <div class="mb-3">
+                <label for="login_email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="login_email"
+                  class="form-control"
+                  required
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="login_pass" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="login_pass"
+                  class="form-control"
+                  required
+                  placeholder="Enter password"
+                />
+              </div>
+              <p class="modal_p">
+                By continuing, I agree to the <span>T&C</span> and
+                <span>Privacy Policy</span> of Vista Rooms.
+              </p>
+              <button type="submit" class="c_button my-2">Continue</button>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <p class="signup_P my-2">
+              Don't have an account?<span
+                ><a
+                  href=""
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#SignupModal"
+                  data-bs-dismiss="modal"
+                >
+                  SignUp</a
+                ></span
+              >
+            </p>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+    <!-- login modal end  -->
+
+    <!-- sign up modal start -->
+    <div
+      class="modal fade"
+      id="SignupModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content px-4">
+          <div class="modal-header border-0 px-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body px-0">
+            <h5 class="modal-title mb-3" id="exampleModalLabel">
+              Join Vista Rooms
+            </h5>
+            <p>*indicates mandatory field</p>
+            <form onsubmit="addUser(event)">
+              <div class="mb-3">
+                <label for="f_name" class="form-label">First Name*</label>
+                <input
+                  type="text"
+                  id="f_name"
+                  class="form-control"
+                  required
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="l_name" class="form-label">Last Name*</label>
+                <input
+                  type="text"
+                  id="l_name"
+                  class="form-control"
+                  required
+                  placeholder="Enter your last name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mobile" class="form-label">Mobile Number*</label>
+                <input
+                  type="number"
+                  id="mobile"
+                  class="form-control"
+                  required
+                  placeholder="Enter your mobile number"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="u_email" class="form-label">Email ID*</label>
+                <input
+                  type="email"
+                  id="u_email"
+                  class="form-control"
+                  required
+                  placeholder="Enter your email ID"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="u_pass" class="form-label">Password*</label>
+                <input
+                  type="password"
+                  id="u_pass"
+                  class="form-control"
+                  required
+                  placeholder="Enter your password"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="res_city" class="form-label"
+                  >Residential City*</label
+                >
+                <input
+                  type="text"
+                  id="res_city"
+                  class="form-control"
+                  required
+                  placeholder="Enter your residential city"
+                />
+              </div>
+              <p class="modal_p">
+                By continuing, I agree to the <span>T&C</span> and
+                <span>Privacy Policy</span> of Vista Rooms.
+              </p>
+              <button type="submit" class="c_button my-2">Continue</button>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <p class="signup_P my-2">
+              Already have an account?<span
+                ><a
+                  href=""
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#LoginModal"
+                  data-bs-dismiss="modal"
+                >
+                  Login</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sign up modal end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Js/loginsignup.js"></script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
 
-<script >
-  let btn = document.getElementById('navbarDropdown');
-  btn.addEventListener('mouseover',()=>{
-    console.log('HEllo');
-    document.getElementById('navbarDropdown').click()
-  })
-  btn.addEventListener('mouseleave',()=>{
-    console.log('HEllo boka');
-    document.getElementById('navbarDropdown').click()
-  })
+<script>
+  let btn = document.getElementById("navbarDropdown");
+  btn.addEventListener("mouseover", () => {
+    console.log("HEllo");
+    document.getElementById("navbarDropdown").click();
+  });
+  btn.addEventListener("mouseleave", () => {
+    console.log("HEllo boka");
+    document.getElementById("navbarDropdown").click();
+  });
 
-  let btn2 = document.getElementById('navbarDropdown2');
-  btn2.addEventListener('mouseover',()=>{
-    console.log('HEll');
-    document.getElementById('navbarDropdown2').click()
-  })
-  btn2.addEventListener('mouseleave',()=>{
-    console.log('HEll bok');
-    document.getElementById('navbarDropdown2').click()
-  })
-
+  let btn2 = document.getElementById("navbarDropdown2");
+  btn2.addEventListener("mouseover", () => {
+    console.log("HEll");
+    document.getElementById("navbarDropdown2").click();
+  });
+  btn2.addEventListener("mouseleave", () => {
+    console.log("HEll bok");
+    document.getElementById("navbarDropdown2").click();
+  });
 </script>
-

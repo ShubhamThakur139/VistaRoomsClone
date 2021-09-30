@@ -43,12 +43,9 @@
       a {
         outline: none;
       }
-      /* #ULnavitems {
-        width: 58%;
-      }  */
       #ULnavitems > li {
         margin-right: 10px !important;
-      }
+      } 
       /* navbar styling end */
 
       #main {
@@ -81,6 +78,37 @@
         border-bottom: 22px solid #000 !important;
       }
 
+      /* modal styling start  */
+      .c_button{
+        width: 100%;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-radius: 3.5px;
+        background: #df495b;
+        font-size: 17px;
+        padding: 5px 0 ;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+      }
+      
+      .c_button:hover {
+        background: #ff5267;
+        color: rgba(255, 255, 255, 0.89);
+      }
+
+      .modal_p{
+        font-size: 14px;
+      }
+      .modal_p span, .signup_P a{
+        cursor: pointer;
+        color: #df495b !important;
+        font-weight: 500;
+      }
+      /* modal styling end  */
+
+
       /* footer styling start */
        a{
             text-decoration: none !important;
@@ -96,13 +124,17 @@
         .main-footer{
           padding-top: 25px;
         }
+        .custom_links{
+          color: #222229 !important;
+          font-weight: 600;
+        }
       /* footer styling end  */
 
     </style>
   </head>
   <body>
     <!-- Navbar start  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-w shadow-sm topbar">
+    <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-white shadow-sm topbar">
       <div class="container px-5">
         <a class="navbar-brand" href="#"
           ><img src="https://www.vistarooms.com/assets/desktop/RED.svg" alt=""
@@ -180,7 +212,7 @@
               </a>
             </li>
           </ul>
-          <button class="btn btn-outline-secondary">
+          <button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#LoginModal">
             <img
               src="https://www.vistarooms.com/assets/desktop/images/user_icon_black.svg"
               alt=""
@@ -192,8 +224,85 @@
     </nav>
     <!-- Navbar end  -->
 
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content px-4">
+          <div class="modal-header border-0 px-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-0 ">
+            <h5 class="modal-title mb-3" id="exampleModalLabel">Login with mobile number</h5>
+            <form onsubmit="loginUser(event)">
+              <div class="mb-3">
+                <label for="login_email" class="form-label">Email</label>
+                <input type="email" id="login_email" class="form-control" required placeholder="Enter email">
+              </div>
+              <div class="mb-3">
+                <label for="login_pass" class="form-label">Password</label>
+                <input type="password" id="login_pass" class="form-control" required placeholder="Enter password">
+              </div>
+              <p class="modal_p">By continuing, I agree to the <span>T&C</span> and <span>Privacy Policy</span> of Vista Rooms.</p>
+              <button type="submit" class="c_button my-2">Continue</button>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start ">
+            <p class="signup_P my-2">Don't have an account?<span><a href="" type="button" data-bs-toggle="modal" data-bs-target="#SignupModal" data-bs-dismiss="modal"> SignUp</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- login modal end  -->
+
+    <!-- sign up modal start -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content px-4">
+          <div class="modal-header border-0 px-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-0 ">
+            <h5 class="modal-title mb-3" id="exampleModalLabel">Join Vista Rooms</h5>
+            <p>*indicates mandatory field</p>
+            <form onsubmit="addUser(event)">
+              <div class="mb-3">
+                <label for="f_name" class="form-label">First Name*</label>
+                <input type="text" id="f_name" class="form-control" required placeholder="Enter your first name">
+              </div>
+              <div class="mb-3">
+                <label for="l_name" class="form-label">Last Name*</label>
+                <input type="text" id="l_name" class="form-control" required placeholder="Enter your last name">
+              </div>
+              <div class="mb-3">
+                <label for="mobile" class="form-label">Mobile Number*</label>
+                <input type="number" id="mobile" class="form-control" required placeholder="Enter your mobile number">
+              </div>
+              <div class="mb-3">
+                <label for="u_email" class="form-label">Email ID*</label>
+                <input type="email" id="u_email" class="form-control" required placeholder="Enter your email ID">
+              </div>
+              <div class="mb-3">
+                <label for="u_pass" class="form-label">Password*</label>
+                <input type="password" id="u_pass" class="form-control" required placeholder="Enter your password">
+              </div>
+              <div class="mb-3">
+                <label for="res_city" class="form-label">Residential City*</label>
+                <input type="text" id="res_city" class="form-control" required placeholder="Enter your residential city">
+              </div>
+              <p class="modal_p">By continuing, I agree to the <span>T&C</span> and <span>Privacy Policy</span> of Vista Rooms.</p>
+              <button type="submit" class="c_button my-2">Continue</button>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-start ">
+            <p class="signup_P my-2">Already have an account?<span><a href="" type="button" data-bs-toggle="modal" data-bs-target="#LoginModal" data-bs-dismiss="modal"> Login</a></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sign up modal end -->
+
     <!-- sticky nav start -->
-    <section class="sticky_nav">
+    <section class="sticky_nav  bg-white">
       <div class="container">
         <div class="row">
           <div
@@ -380,7 +489,7 @@
           <div class="row pt-30 pb-35">
               <div class="col-lg-3 col-md-3 col-sm-12">
                   <ul class="footer-ul" style="list-style: none;">
-                      <li class="">
+                      <li class="custom_links">
                           <a>QUICK LINKS</a>
                       </li>
                   </ul>
@@ -405,7 +514,7 @@
               <div class="col-lg-3 col-md-3 col-sm-12">
                   <ul class="footer-ul" style="list-style: none;">
                       <!-- p1-16-redhat-medium -->
-                      <li class="">
+                      <li class="custom_links">
                           <a>CONTACT US</a>
                       </li>
                   </ul>
@@ -426,7 +535,7 @@
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12">
                   <ul class="footer-ul" style="list-style: none;">
-                      <li class="">
+                      <li class="custom_links">
                           <a>VISTA CULTURE</a>
                       </li>
                   </ul>
@@ -482,6 +591,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/Js/CityPage.js"></script>
+    <script src="/Js/loginsignup.js"></script>
   </body>
 </html>
 
