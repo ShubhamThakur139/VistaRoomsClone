@@ -2,30 +2,29 @@
 
 // function to check is email exist or not
 async function isEmailExist(email) {
-  let isTrue = false;
+  let isEmail = false;
   let res = await fetch("http://localhost:3000/users");
   let data = await res.json();
   data.forEach(({ userEmail }) => {
     if (email === userEmail) {
-      isTrue = true;
-      return isTrue;
+      isEmail = true;
+      return isEmail;
     }
   });
-  return isTrue;
+  return isEmail;
 }
 
 // function to check is mobile number exist or not
-async function isPhoneExist(mobile) {
+async function isPhoneExist(umobile) {
   let isTrue = false;
   let res = await fetch("http://localhost:3000/users");
   let data = await res.json();
-  data.forEach((el) => {
-    if (mobile === el.mobile) {
+  data.forEach(({ mobile }) => {
+    if (umobile === mobile) {
       isTrue = true;
       return isTrue;
     }
   });
-  // isTrue = false;
   return isTrue;
 }
 
@@ -48,22 +47,23 @@ async function addUser(event) {
   let u_email = document.getElementById("u_email").value;
   let u_pass = document.getElementById("u_pass").value;
   let res_city = document.getElementById("res_city").value;
+
+  let isEmail = await isEmailExist(u_email);
+  let isPhone = await isPhoneExist(mobile);
+
   if (mobile.length != 10) {
     alert("Length should be equal to 10");
     document.getElementById("mobile").value = "";
     return;
-  }
-  if (u_pass.length < 8) {
+  } else if (u_pass.length < 8) {
     alert("password length is too short");
     document.getElementById("u_pass").value = "";
     return;
-  }
-  if (isPhoneExist(mobile)) {
+  } else if (isPhone) {
     alert("Mobile Number already exist");
     document.getElementById("mobile").value = "";
     return;
-  }
-  if (isEmailExist(u_email)) {
+  } else if (isEmail) {
     alert("Email already exist");
     document.getElementById("u_email").value = "";
     return;
@@ -93,6 +93,7 @@ async function addUser(event) {
       body: JSON.stringify(data), // body data type must match "Content-Type" header
     });
     let data1 = await response.json();
+    alert("signup Successfully");
   }
 }
 
