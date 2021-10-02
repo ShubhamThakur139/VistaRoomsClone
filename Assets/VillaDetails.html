@@ -55,6 +55,7 @@
         outline: none;
       }
       .sticky_nav {
+        /* margin-top: 58px; */
         padding: 10px 0;
         box-shadow: 0 1px 2px rgb(0 0 0 / 16%);
       }
@@ -86,11 +87,72 @@
         }
       /* footer styling end  */
 
+      /* img gallery styling  */
+      .img-gal img{
+        width: 100%;
+        border-radius: 6px;
+      }
+      /* end  */
+
+      /* villa details styling start  */
+
+      .villa_details h2{
+        font-weight: 800;
+        font-size: 24px;
+      }
+
+      .villa_details p{
+        font-weight: 800;
+        font-size: 18px;
+      }
+
+      /* villa details styling end  */
+
+      .fixed-bottom{
+        border: 1px solid #333;
+        padding: 3px 0;
+      }
+      .col_bk{
+        color: black;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .c_btn{
+        width: 80%;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-radius: 3.5px;
+        background: #df495b;
+        font-size: 14px;
+        padding: 10px 0 ;
+        font-weight: 500;
+        color: white;
+      }
+      
+      .c_button:hover {
+        background: #ff5267;
+        color: rgba(255, 255, 255, 0.89);
+      }
+
+      .text-right {
+        text-align: right !important;
+      }
+      .align-self-center{
+        align-self: center !important;
+      }
+      .h-100{
+        height: 100%;
+      }
+      .small-text {
+        font-size: 16px;
+
+      }
     </style>
   </head>
   <body>
     <!-- Navbar start  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-w shadow-sm topbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-w shadow-sm topbar sticky-top bg-white">
       <div class="container px-5">
         <a class="navbar-brand" href="#"
           ><img src="https://www.vistarooms.com/assets/desktop/RED.svg" alt=""
@@ -181,7 +243,7 @@
     <!-- Navbar end  -->
 
     <!-- sticky nav start -->
-    <section class="sticky_nav">
+    <section class="sticky_nav bg-white">
       <div class="container">
         <div class="row">
           <div
@@ -228,6 +290,100 @@
       </div>
     </section>
     <!-- sticky nav end -->
+
+    <!-- images gallery start -->
+    <div class="container img-gal">
+      <div class="d-flex">
+        <div class="col-lg-8 col-12 p-3"><img src="https://img.vistarooms.com/gallery/3-rooms-at-pine-estate-5d7d72.jpg" alt="" id="img1"></div>
+        <div class="col-lg-4 col-12 p-1">
+          <div class="pt-3 px-2 col-12"><img src="https://img.vistarooms.com/gallery/3-rooms-at-pine-estate-bd89c6.jpg" alt=""></div>
+          <div class="p-2 col-12"><img src="https://img.vistarooms.com/gallery/3-rooms-at-pine-estate-315092.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <!-- images gallery end -->
+
+    <!-- content start  -->
+    <div class="container villa_details">
+      <h1>About <span id="villa_name"></span>, <span id="loc"></span></h1>
+      <p>Located amidst scenic mountains, Pine Estate is a stunning home in the quaint town of Shimla. Featuring elegant interiors with a hint of colonial splashed across the house, this 130-year old heritage property has been a witness to several books written by T P Russell Stracey. With gorgeous lawns that make for ideal breakfast spots, al fresco dining overlooking the surrounding scenery and the attached balconies offering the perfect vantage point, this holiday home should definitely be next on your list!</p>
+      
+      <h2><strong><span id="villa_name1"></span> is special because of its:</strong></h2> 
+      <p>- Location amidst picturesque scenery </p>
+      <p> - Lush lawns </p>
+      <p> - Al fresco dining </p>
+      <p> - Modern decor </p>
+      <p> - Jacuzzi </p>
+
+      <h2>We care for your absolute comfort! To that effect, we provide:</h2>
+      <p> - Generator, heater, Wi-Fi </p>
+      <p> - Wardrobe, hangers, torch </p>
+      <p> - Geysers, towels, toiletries </p>
+      <p> - Medical kit, mosquito repellent </p>
+      <p> - Barbecue kit, bonfire </p>
+      <p> - Secured parking space for up to 4 cars </p>
+
+      <h2> FOOD </h2>
+      <p> - All meals can be provided in-house on an a la carte basis. </p>
+      <p> - Consumption of non-vegetarian food is allowed. </p>
+
+      <h2> GUEST ACCESS </h2>
+      <p> The guests have access to their rooms and common areas, except the kitchen. In response to the COVID-19 pandemic, guests may have restricted access to any shared amenities. </p>
+
+      <h2> INTERACTION WITH GUESTS </h2>
+      <p> The host is present at the property and is always accessible. A trained and responsible caretaker is present at the property to resolve any concerns and help you have a perfect stay. </p>
+
+      <h2> STAFF ACCOMMODATION </h2>
+      <p> We are unable to provide accommodation for your personal staff.</p>
+
+      <h2> ACTIVITIES </h2>
+      <p> Within the property, guests can carry and play indoor games like cards and ludo. Guests can take a peaceful walk in the lawn and embrace the beauty around or engage in various outdoor games like badminton. They can relish a scrumptious barbecue meal and request for a bonfire to be lit up. </p>
+
+      <h2> ADDITIONAL COSTS </h2>
+      <p> - Barbecue kit is available at an additional cost of Rs. 500 per use.  </p>
+      <p> - Bonfire can be arranged at an additional cost of Rs. 500 per hour.  </p>
+      <p> - The jacuzzi can be used at an additional cost of Rs. 2000 for a duration of 2 hours. </p>
+      <p> - Prices may vary subject to availability and peak season rates. </p>
+
+
+
+    </div>
+    <!-- content end  -->
+
+
+    <!-- fixed Bottom start -->
+    <section class="fixed-bottom bg-white">
+      <div class="container">
+        <div class="row py-2">
+          <div class="col-sm-12 col-md-5">
+            <small class="text-black font-a-m">
+              <span id="loc1" class="text-capitalize col_bk"></span>
+              <span class="col_bk">, Himachal Pradesh</span>
+            </small>
+            <h5 id="villa_name2"></h5>
+          </div>
+          <div class="col-sm-12 col-md-7 align-items-center">
+            <div class="row align-items-center h-100 d-flex justify-content-between align-items-lg-center" >
+              <div class="col-7 text-right amount" >
+                <div style="display: inline-block;margin-right: 1rem;">
+                <h5>
+                  <span id="price"></span>
+                  <span class="small-text" style="color: #222222;" >/ night</span>
+                </h5>
+                <div>
+                  <small style="color: #222222;" >(excl. taxes & charges)</small>
+                </div>
+                </div>
+              </div>
+              <div class="col-5 align-self-center text-right">
+                <button class="c_btn">Check availability</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fixed Bottom end -->
 
 
     <!-- Footer start  -->
@@ -430,7 +586,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="/Js/CityPage.js"></script>
+    <script src="/Js/VillaDetails.js"></script>
   </body>
 </html>
 
