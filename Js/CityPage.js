@@ -52,6 +52,7 @@ function removeprev() {
   card_holder.innerHTML = "";
 }
 
+// filter villas by sort by low to high or reverse
 async function run() {
   let sort = document.getElementById("sortby");
   let data = sort.value;
@@ -87,11 +88,16 @@ function rangeSlide(value) {
 }
 
 async function filterRange(e) {
+  let filterData = [];
   e.preventDefault();
   let data = await fetch("http://localhost:3000/villas");
   let res = await data.json();
-  console.log(res);
-  console.log(r_value);
+  let range_num = parseInt(r_value);
+  res.forEach((element) => {
+    if (element.cost <= range_num) {
+      filterData.push(element);
+    }
+  });
   removeprev();
-  appendData(res);
+  appendData(filterData);
 }
