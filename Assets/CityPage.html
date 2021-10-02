@@ -358,8 +358,9 @@
           <div class="px-1 col-2">
             <select
               name=""
-              id=""
+              id="sortby"
               placeholder=""
+              onchange="run()"
               class="input-group-text text-start"
               style="
                 font-size: 18px;
@@ -367,9 +368,9 @@
                 appearance: none;
               "
             >
-              <option value="" class="line">Sort By</option>
-              <option value="">Price - Low to High</option>
-              <option value="">Price - High to Low</option>
+              <option value="normal">Sort By</option>
+              <option value="ltoh">Price - Low to High</option>
+              <option value="htol">Price - High to Low</option>
             </select>
           </div>
         </div>
