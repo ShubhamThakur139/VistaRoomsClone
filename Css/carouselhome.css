@@ -1076,6 +1076,9 @@ font-family: 'Red Hat Text', sans-serif;
     justify-content: center;
     margin:auto;
   }
+  .last{
+    margin-bottom: 100px;
+  }
   @media screen and (min-width:320px) and (max-width:480px){
     #city_name_list{
       height: 100px;
@@ -1414,6 +1417,9 @@ font-family: 'Red Hat Text', sans-serif;
       font-family: 'Red Hat Text', sans-serif;
     }
   }
+  .last{
+    margin-bottom: 30px;
+  }
   @media screen and (min-width:480px) and (max-width:576px){
     #city_name_list{
       height: 100px;
@@ -1750,6 +1756,9 @@ font-family: 'Red Hat Text', sans-serif;
       font-weight: small;
       font-family: 'Red Hat Text', sans-serif;
     }
+  }
+  .last{
+    margin-bottom: -80px;
   }
   @media screen and (min-width:576px) and (max-width:750px){
     #city_name_list{
@@ -2088,6 +2097,9 @@ font-family: 'Red Hat Text', sans-serif;
       font-family: 'Red Hat Text', sans-serif;
     }
   }
+  .last{
+    margin-bottom: -80px;
+  }
   @media screen and (min-width:750px) and (max-width:992px){
     #city_name_list{
       height: 100px;
@@ -2404,6 +2416,9 @@ font-family: 'Red Hat Text', sans-serif;
       font-weight: small;
       font-family: 'Red Hat Text', sans-serif;
     }
+    .last{
+      margin-bottom: 60px;
+    }
   }
   @media screen and (min-width:992px) and (max-width:1150px){
     #place_name1{
@@ -2620,6 +2635,9 @@ font-family: 'Red Hat Text', sans-serif;
       font-weight: small;
       font-family: 'Red Hat Text', sans-serif;
     }
+    .last{
+      margin-bottom: 60px;
+    }
   }
   @media screen and (min-width:992px) and (max-width:1279px){
     #city_name_list{
@@ -2792,5 +2810,8 @@ font-family: 'Red Hat Text', sans-serif;
       border-radius: 6px;
       margin-bottom:2%;
       margin-left: 100px;
+    }
+    .last{
+      margin-bottom: 60px;
     }
   }
