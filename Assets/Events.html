@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Text', sans-serif;
+  }
+
+  .upper-nav {
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #df495b;
+    color: white;
+    font-weight: bolder;
+    padding: 1%;
+  }
+
+  #container {
+    position: relative;
+    width: 90%;
+    height: 85vh;
+    margin: auto;
+  }
+
+  #container>img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .content {
+    /* border: 1px solid black; */
+    position: absolute;
+    color: White;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .written-cont {
+    /* border: 1px solid rgb(255, 207, 207); */
+    width: 50%;
+  }
+
+  .written-cont h1 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .written-cont h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .queryform {
+    /* border: 1px solid rgb(243, 242, 242); */
+    width: 30%;
+    height: 90%;
+    margin-top: 2%;
+  }
+
+  form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-around; */
+  }
+
+  form>input,
+  select {
+    height: 8%;
+    margin: 2% 0;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: medium;
+  }
+
+  form>button {
+    height: 8%;
+    margin: 2% 0;
+    background-color: #df495b;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: medium;
+  }
+
+  .input-para {
+    width: 100%;
+  }
+
+  #intro_parag {
+    width: 70%;
+    height: 40vh;
+    margin: 40px auto;
+    border: 2px solid red;
+  }
+</style>
+
+<body>
+
+  <nav class="upper-nav">
+    <img src="https://www.vistarooms.com/assets/desktop/RED.svg" alt="">
+    <button id="btn"> +91 7676 879 879</button>
+  </nav>
+  <div id="container">
+    <img
+      src="https://stories.forbestravelguide.com/wp-content/uploads/2020/01/HERO-LuxuriousAsianVillas-TheNautilusMaldives-NautilusMansion-CreditTheNautilus.jpg"
+      alt="">
+    <div class="content">
+      <div class="written-cont">
+        <h1>Experiences with Vista.</h1>
+        <h3>Plan the perfect occasion.</h3>
+      </div>
+      <div class="queryform">
+        <form>
+          <input id="first_name" name="first_name" type="text" class="input_para" placeholder="Name" required="">
+          <input id="email_id" name="email_id" type="email" class="input_para" placeholder="Email ID" required="">
+          <input id="phone_number" name="phone_number" type="tel" class="input_para" placeholder="Phone Number"
+            required="">
+          <input id="destination" name="destination_" type="text" class="input_para" placeholder="Destination "
+            required="">
+          <select id="number_of_guests" name="number_of_guests" class="input_para" required="">
+            <option value="">Number of Guests</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="12+">12+</option>
+          </select>
+          <select id="type_of_event" name="type_of_event" class="" required="">
+            <option value="Type of event">Type of event</option>
+            <option value="Proposal">Proposal</option>
+            <option value="Bachelorette Party">Bachelorette Party</option>
+            <option value="Bachelor Party">Bachelor Party</option>
+            <option value="Pre Wedding Shoot">Pre Wedding Shoot</option>
+            <option value="Cocktail Party">Cocktail Party</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Weekend With kids">Weekend With kids</option>
+            <option value="Family Getaway">Family Getaway</option>
+            <option value="Corporate Getaway">Corporate Getaway</option>
+          </select>
+          <button class="" id="lp-pom-button-523" type="submit">
+            <strong>Enquire Now</strong>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <section id="intro_parag">
+    <p> <span><strong>Indulge your senses in luxurious experiences at Vistarooms.</strong></span></p>
+
+    <p>Food enthusiasts, pamper your taste buds with our weekly Sunday brunch or have a relaxing weekend with your loved
+      ones while we keep your kids busy with fun filled kids activities.</p>
+
+    <p>Our villas are great for the most romantic proposals, peaceful but fun bachelorette parties, that rustic
+      pre-wedding shoot, an exclusive cocktail party and even your special day with the most intimate wedding!</p>
+
+    <p>And if a real office party is what you want, we organize customized corporate off-sites too, at great prices!</p>
+
+    </p>For anyone wanting to break through the monotony and experience the extraordinary, we got you.</p>
+
+  </section>
+
+</body>
+
+</html>
