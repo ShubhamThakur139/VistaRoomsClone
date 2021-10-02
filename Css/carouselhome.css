@@ -2101,6 +2101,17 @@ font-family: 'Red Hat Text', sans-serif;
     margin-bottom: -80px;
   }
   @media screen and (min-width:750px) and (max-width:992px){
+    .person_images{
+      display:grid;
+      grid-template:"pm1 pm2"
+                    "pm3 pm4";
+      margin:auto;
+      text-align: center;
+      justify-content: center;
+      font-family: 'Red Hat Text', sans-serif;
+      width:90%;
+      margin-bottom:35%;
+    }
     #city_name_list{
       height: 100px;
       width:  290px;
@@ -2815,3 +2826,4 @@ font-family: 'Red Hat Text', sans-serif;
       margin-bottom: 60px;
     }
   }
+ 
