@@ -6,6 +6,7 @@
 #dubai-x{
     margin: 5% auto;
     width: 75%;
+    cursor: pointer;
 }
 #dubai-x img{
     width: 100%;
