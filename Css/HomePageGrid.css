@@ -3,6 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 }
+#dubai-x{
+    margin: 5% auto;
+    width: 75%;
+    cursor: pointer;
+}
+#dubai-x img{
+    width: 100%;
+    height: auto;
+}
+#Vista-Feature{
+    margin: 5% 0;
+    width: 100%;
+    height: 45vh;
+    background-color: #f7f7f7;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 2%;
+}
+.feature-flex{
+    margin: 3% auto;
+    width: 75%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #f7f7f7;
+}
+.feature > div:first-child{
+    margin: auto;
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 40%;
+}
+.feature img{
+    height: 100%;
+    width: 100%;
+}
+#faltu-details{
+    margin: 5% auto;
+    width: 75%;
+    text-align: center;
+}
+#faltu-details p{
+    margin-top: 2%;
+    font-weight: lighter;
+}
 #homepagegrid{
     width: 75%;
     margin: auto;
