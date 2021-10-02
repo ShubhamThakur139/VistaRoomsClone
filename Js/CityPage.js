@@ -78,3 +78,20 @@ async function run() {
     appendData(res);
   }
 }
+
+let r_value;
+
+function rangeSlide(value) {
+  document.getElementById("rangeValue").innerHTML = value;
+  r_value = value;
+}
+
+async function filterRange(e) {
+  e.preventDefault();
+  let data = await fetch("http://localhost:3000/villas");
+  let res = await data.json();
+  console.log(res);
+  console.log(r_value);
+  removeprev();
+  appendData(res);
+}

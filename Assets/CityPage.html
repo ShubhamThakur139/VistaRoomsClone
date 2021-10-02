@@ -78,6 +78,10 @@
         border-bottom: 22px solid #000 !important;
       }
 
+      .w-100{
+        width: 100%;
+      }
+
       /* modal styling start  */
       .c_button{
         width: 100%;
@@ -86,8 +90,8 @@
         border: none;
         border-radius: 3.5px;
         background: #df495b;
-        font-size: 17px;
-        padding: 5px 0 ;
+        font-size: 15px;
+        padding: 8px 0 ;
         font-weight: 500;
         text-transform: uppercase;
         color: white;
@@ -108,6 +112,18 @@
       }
       /* modal styling end  */
 
+      #rangeValue {
+        display: block;
+        text-align: center;
+        font-size: 3em;
+        color: rgb(71, 71, 71);
+        font-weight: 500;
+      }
+
+      .c_range{
+        display: block;
+        width: 100%;
+      }
 
       /* footer styling start */
        a{
@@ -347,11 +363,12 @@
           <div class="px-1 col-2">
             <div class="w-100">
               <input
-                type="text"
+                type="button"
+                data-bs-toggle="modal" data-bs-target="#RangeModal"
                 name=""
                 class="w-100 text-start text-capitalize input-group-text"
                 id=""
-                placeholder="Filters"
+                value="Range"
               />
             </div>
           </div>
@@ -377,6 +394,31 @@
       </div>
     </section>
     <!-- sticky nav end -->
+
+
+    <!-- Range Modal Stat-->
+    <div class="modal fade" id="RangeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content px-4">
+          <div class="modal-header border-0 px-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-0 ">
+            <h5 class="modal-title mb-3" id="exampleModalLabel">Filter Villas By Range</h5>
+            <form onsubmit="filterRange(event)">
+              <div class="mb-3">
+                <label for="login_email" class="form-label font-17 fw-bold">Price Range(1,000 to 1,00,000)</label>
+                <span id="rangeValue">0</span>
+                <input type="range" id="login_email" class="c_range" value="0" min="1000" max="100000"  onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)">
+              </div>
+              <button type="submit" class="c_button my-2" style="width: 40%; float: right;">Apply Changes</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Range modal end  -->
+
 
     <!-- Dynamically villa data show start -->
     <div id="main">
