@@ -8,16 +8,6 @@
     letter-spacing: 0.5px;
 }
 
-/* navbar styling start */
-a {
-    outline: none;
-}
-
-#ULnavitems>li {
-    margin-right: 10px !important;
-}
-
-/* navbar styling end */
 
 /* modal styling start  */
 .c_button {
@@ -53,6 +43,9 @@ a {
 /* modal styling end  */
 
 /* carousel styling start  */
+.carousel {
+    top: -10px;
+}
 
 .carousel-caption {
     top: 70px;
@@ -258,8 +251,6 @@ input {
 .dropdown-menu[data-bs-popper] {
     top: 60px !important;
 }
-
-/*  */
 
 /* footer styling start */
 a {

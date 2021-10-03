@@ -11,9 +11,11 @@ img1.src = data.img1;
 let villa_name = document.getElementById("villa_name");
 let villa_name1 = document.getElementById("villa_name1");
 let villa_name2 = document.getElementById("villa_name2");
+let villa_name4 = document.getElementById("villa_name4");
 villa_name.textContent = data.name;
 villa_name1.textContent = data.name;
 villa_name2.textContent = data.name;
+villa_name4.textContent = data.name;
 // villa location
 let loca = document.getElementById("loc");
 loca.textContent = newText;
@@ -26,8 +28,8 @@ price.textContent = `₹ ${data.cost}`;
 function bookNow() {
   let id = localStorage.getItem("loggedUser");
   if (id == null) {
-    alert("First You have to Login");
+    alert("Please! You are requested to login first.");
   } else {
-    alert("Your Booking is Confirmed");
+    alert("Congratulations! 🎉🎉 Your Booking is Confirmed!");
   }
 }
