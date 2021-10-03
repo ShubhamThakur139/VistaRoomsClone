@@ -381,15 +381,15 @@
   ],
   "users": [
     {
-      "firstName": "Ankush",
+      "firstName": "Shubham",
       "lastName": "Thakur",
       "mobile": "8360403156",
       "userEmail": "at328745@gmail.com",
       "userPass": "123456789",
       "rescidentialCity": "LUDHIANA",
-      "dateOfBirth": "2021-10-27",
-      "gender": "Male",
-      "id": 1
+      "id": 1,
+      "dateOfBirth": "2021-10-04",
+      "gender": "Male"
     },
     {
       "firstName": "Ankush",
@@ -414,15 +414,6 @@
     {
       "firstName": "Ankush",
       "lastName": "Thakur",
-      "mobile": "0836040315",
-      "userEmail": "st328745@gmail.com",
-      "userPass": "dbsjfbjbdlfa",
-      "rescidentialCity": "LUDHIANA",
-      "id": 4
-    },
-    {
-      "firstName": "Ankush",
-      "lastName": "Thakur",
       "mobile": "8360403156",
       "userEmail": "shubham@gmail.com",
       "userPass": "aaaaaaaaaaaaaaaaa",
@@ -432,48 +423,11 @@
     {
       "firstName": "Ankush",
       "lastName": "Thakur",
-      "mobile": "6283830091",
-      "userEmail": "shubham1@gmail.com",
-      "userPass": "aaaaaaaaaaaa",
-      "rescidentialCity": "LUDHIANA",
-      "id": 6
-    },
-    {
-      "firstName": "Ankush",
-      "lastName": "Thakur",
       "mobile": "7845123695",
-      "userEmail": "shubhamnsjdnj@gmail.com",
-      "userPass": "12345679",
-      "rescidentialCity": "LUDHIANA",
-      "id": 7
-    },
-    {
-      "firstName": "Ankush",
-      "lastName": "Thakur",
-      "mobile": "0836043156",
-      "userEmail": "at32@gmail.com",
-      "userPass": "sssssssssssssssssssssss",
-      "rescidentialCity": "LUDHIANA",
-      "id": 8
-    },
-    {
-      "firstName": "Anshuman",
-      "lastName": "Kashyap",
-      "mobile": "1234567895",
-      "userEmail": "anshuman@gmail.com",
-      "rescidentialCity": "India",
-      "dateOfBirth": "2021-10-29",
-      "gender": "Male",
-      "id": 9
-    },
-    {
-      "firstName": "Ankush",
-      "lastName": "Thakur",
-      "mobile": "4512789651",
-      "userEmail": "ankush@gmail.com",
+      "userEmail": "shubham@gmial.com",
       "userPass": "123456789",
       "rescidentialCity": "LUDHIANA",
-      "id": 10
+      "id": 6
     }
   ]
 }
