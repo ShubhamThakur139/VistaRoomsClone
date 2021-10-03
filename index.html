@@ -45,7 +45,7 @@
       "
     >
       <div class="container px-5">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="./index.html"
           ><img src="https://www.vistarooms.com/assets/desktop/RED.svg" alt=""
         /></a>
         <button
@@ -124,6 +124,7 @@
           <button
             class="btn btn-outline-secondary"
             type="button"
+            id="signIn"
             data-bs-toggle="modal"
             data-bs-target="#LoginModal"
           >
@@ -133,6 +134,25 @@
             />
             Login
           </button>
+          <div class="dropdown">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="signout"
+            id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false"
+            style="display: none"
+          >
+            <img
+              src="https://www.vistarooms.com/assets/desktop/images/user_icon_black.svg"
+              alt=""
+            />
+            SignOut
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+            <li><a class="dropdown-item" href="./Assets/profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="#" onclick="signout()">Log Out</a></li>
+          </ul>
+        </div>
         </div>
       </div>
     </nav>
@@ -1201,5 +1221,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="/Js/loginsignup.js"></script>
   </body>
 </html>

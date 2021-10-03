@@ -253,6 +253,14 @@ input {
     border-radius: 5px;
 }
 
+/*  */
+
+.dropdown-menu[data-bs-popper] {
+    top: 60px !important;
+}
+
+/*  */
+
 /* footer styling start */
 a {
     text-decoration: none !important;

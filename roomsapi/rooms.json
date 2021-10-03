@@ -387,6 +387,8 @@
       "userEmail": "at328745@gmail.com",
       "userPass": "123456789",
       "rescidentialCity": "LUDHIANA",
+      "dateOfBirth": "2021-10-21",
+      "gender": "Male",
       "id": 1
     },
     {
@@ -396,7 +398,9 @@
       "userEmail": "at328746@gmail.com",
       "userPass": "123456789",
       "rescidentialCity": "LUDHIANA",
-      "id": 2
+      "id": 2,
+      "dateOfBirth": "2007-08-03",
+      "gender": "Male"
     },
     {
       "firstName": "Ankush",
@@ -442,6 +446,25 @@
       "userPass": "12345679",
       "rescidentialCity": "LUDHIANA",
       "id": 7
+    },
+    {
+      "firstName": "Ankush",
+      "lastName": "Thakur",
+      "mobile": "0836043156",
+      "userEmail": "at32@gmail.com",
+      "userPass": "sssssssssssssssssssssss",
+      "rescidentialCity": "LUDHIANA",
+      "id": 8
+    },
+    {
+      "firstName": "Anshuman",
+      "lastName": "Kashyap",
+      "mobile": "1234567895",
+      "userEmail": "anshuman@gmail.com",
+      "rescidentialCity": "India",
+      "dateOfBirth": "2021-10-29",
+      "gender": "Male",
+      "id": 9
     }
   ]
 }
