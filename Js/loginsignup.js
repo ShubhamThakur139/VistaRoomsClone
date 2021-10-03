@@ -6,14 +6,11 @@ function signout() {
 
 // Checking user logged in or not
 if (localStorage.getItem("loggedUser") == null) {
-  console.log("hello");
 } else {
   let loginbtn = document.getElementById("signIn");
   loginbtn.style.display = "none";
   let signoutbtn = document.getElementById("signout");
   signoutbtn.style.display = "block";
-
-  console.log("hiii");
 }
 
 // Sign up Functionality Start
