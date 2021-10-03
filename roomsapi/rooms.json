@@ -387,7 +387,7 @@
       "userEmail": "at328745@gmail.com",
       "userPass": "123456789",
       "rescidentialCity": "LUDHIANA",
-      "dateOfBirth": "2021-10-21",
+      "dateOfBirth": "2021-10-27",
       "gender": "Male",
       "id": 1
     },
@@ -465,6 +465,15 @@
       "dateOfBirth": "2021-10-29",
       "gender": "Male",
       "id": 9
+    },
+    {
+      "firstName": "Ankush",
+      "lastName": "Thakur",
+      "mobile": "4512789651",
+      "userEmail": "ankush@gmail.com",
+      "userPass": "123456789",
+      "rescidentialCity": "LUDHIANA",
+      "id": 10
     }
   ]
 }
