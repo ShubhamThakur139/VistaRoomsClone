@@ -1,3 +1,21 @@
+// logout feature
+function signout() {
+  localStorage.removeItem("loggedUser");
+  location.href = "/index.html";
+}
+
+// Checking user logged in or not
+if (localStorage.getItem("loggedUser") == null) {
+  console.log("hello");
+} else {
+  let loginbtn = document.getElementById("signIn");
+  loginbtn.style.display = "none";
+  let signoutbtn = document.getElementById("signout");
+  signoutbtn.style.display = "block";
+
+  console.log("hiii");
+}
+
 // Sign up Functionality Start
 
 // function to check is email exist or not
@@ -94,8 +112,8 @@ async function addUser(event) {
 // Sign up functionality start
 
 // Login functionality start
-async function loginUser(e) {
-  e.preventDefault();
+async function loginUser(event) {
+  event.preventDefault();
   let login_email = document.getElementById("login_email").value;
   let login_pass = document.getElementById("login_pass").value;
 
@@ -114,13 +132,15 @@ async function loginUser(e) {
     return;
   }
   let userExist = false;
-  data.forEach(({ userEmail, userPass }) => {
-    if (userEmail === login_email) {
-      if (userPass === login_pass) {
+  data.forEach((el) => {
+    if (el.userEmail === login_email) {
+      if (el.userPass === login_pass) {
         userExist = true;
         login_email = "";
         login_pass = "";
         alert(`Login Successfully`);
+        localStorage.setItem("loggedUser", JSON.stringify(el.id));
+        location.href = "/index.html";
         document.getElementById("login_email").value = "";
         document.getElementById("login_pass").value = "";
         return;

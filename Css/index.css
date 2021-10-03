@@ -4,6 +4,8 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-family: "Red Hat Text", sans-serif;
+    line-height: 23px;
+    letter-spacing: 0.5px;
 }
 
 /* navbar styling start */
@@ -188,12 +190,76 @@ input {
     cursor: pointer;
 }
 
+.card img {
+    object-fit: cover;
+}
+
 .card-body {
     text-align: left !important;
 }
 
 /* state carousel end  */
 
+
+/* section-6 styling  */
+.section-6 {
+    background-color: #f7f7f7;
+    padding: 10px 0;
+}
+
+.carousel-3 {
+    width: 85%;
+    margin: auto;
+}
+
+.carousel-3 .card {
+    height: 300px;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.carousel-3 .card img {
+    height: 70% !important;
+    border-radius: 7px;
+}
+
+/* section 7 styling  */
+.section-7 {
+    padding-top: 25px;
+    margin: auto;
+}
+
+.section-7 img {
+    width: 100%;
+}
+
+.section-7 .row>div {
+    border: 1px solid #c8c7cc;
+    display: grid;
+    place-items: center;
+    margin-right: 3.3%;
+}
+
+.view_btn {
+    width: 100%;
+    padding: 7px 0;
+    outline: none;
+    border: none;
+    border: 1px solid #8a8a8f;
+    cursor: pointer;
+    font-weight: 500;
+    background: none;
+    border-radius: 5px;
+}
+
+/*  */
+
+.dropdown-menu[data-bs-popper] {
+    top: 60px !important;
+}
+
+/*  */
 
 /* footer styling start */
 a {
