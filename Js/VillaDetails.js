@@ -1,5 +1,4 @@
 let data = JSON.parse(localStorage.getItem("villaInfo"));
-console.log("data:", data.name);
 
 let loc = data.location;
 let newText = loc.replace(", himachal pradesh", "");
@@ -23,3 +22,12 @@ loca1.textContent = newText;
 // villa price
 let price = document.getElementById("price");
 price.textContent = `₹ ${data.cost}`;
+
+function bookNow() {
+  let id = localStorage.getItem("loggedUser");
+  if (id == null) {
+    alert("First You have to Login");
+  } else {
+    alert("Your Booking is Confirmed");
+  }
+}
