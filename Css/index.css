@@ -43,10 +43,6 @@
 /* modal styling end  */
 
 /* carousel styling start  */
-.carousel {
-    top: -10px;
-}
-
 .carousel-caption {
     top: 70px;
     left: 160px;
@@ -76,7 +72,6 @@
 
 .search-info {
     box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
-    /* position: relative; */
     padding: 12px 2px;
     background-color: #fff;
     border-radius: 4px;
