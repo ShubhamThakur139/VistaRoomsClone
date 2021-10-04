@@ -22,20 +22,27 @@ In this project we have used the following tech stack.
 5. User can update the details on profile page.
 6. We add some authentication to profile page that non-login user can’t access that page.
 
+
+# Snapshots 📷
+
+1. Landing Page
+
 # Demo 🎥
 
 [Vistarooms_clone](https://drive.google.com/file/d/17HNKYVQIqDkWk6Fdv-dWfhv-McpYYQ2b/view)
 
 # Team Members and Contributors 😇
 
-👤 Shubham Thakur 
+Team members: Shubham Thakur, Anshuman Kashyap, Gautam Ankit Singh.
+
+👤 Shubham Thakur  was responsible for developing the CityPage, VillaDetails page, Login modal, Signup modal, User Profile page along with their Js functionalities.
 
 - Github: [Shubham Thakur](https://github.com/ShubhamThakur139)
 
-👤 Anshuman Kashyap
+👤 Anshuman Kashyap was responsible for creating navbar, footer, Event Page and some carousel section of Homepage .
 
 - Github: [Anshuman Kashyap](https://github.com/Anshuman-K)
 
-👤 Gautam Ankit Singh
+👤 Gautam Ankit Singh was responsible for making the Home page.
 
 - Github: [Gautam Ankit Singh](https://github.com/GautamAnkitSingh)
