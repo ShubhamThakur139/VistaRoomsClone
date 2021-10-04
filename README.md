@@ -28,7 +28,7 @@ In this project we have used the following tech stack.
 6. CityVillas Page
    ![CityVillas Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/cityPage.gif)
 7. VillaDetails Page
-   ![VillaDetails Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/villadetails.png)   
+   ![VillaDetails Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/villadetails.gif)   
 8. Event Page
    ![Event Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/Event.png)    
 
