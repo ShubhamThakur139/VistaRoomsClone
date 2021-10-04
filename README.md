@@ -13,6 +13,10 @@ In this project we have used the following tech stack.
 - JavaScript: Used for performing functionality like login signup and showing data
 - Rest API: Creating rest api to store user data as well as villas information.
 
+# Snapshots 📷
+
+1. Landing Page
+
 # Features ✨
 
 1. User can Sign Up by providing Valid details. If user enter email or password which is already register then user will get error.
@@ -22,10 +26,6 @@ In this project we have used the following tech stack.
 5. User can update the details on profile page.
 6. We add some authentication to profile page that non-login user can’t access that page.
 
-
-# Snapshots 📷
-
-1. Landing Page
 
 # Demo 🎥
 
