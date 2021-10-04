@@ -16,11 +16,21 @@ In this project we have used the following tech stack.
 # Snapshots 📷
 
 1. Landing Page
-   ![Landing Page](C:\Users\DELL\Desktop\VistaRoomsClone\ReadmeImages\landingPage.gif)
+   ![Landing Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/landingPage.gif)
 2. Login Page
-   ![Login Page](C:\Users\DELL\Desktop\VistaRoomsClone\ReadmeImages\Login.png)
+   ![Login Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/Login.png)
 3. SignUp Page
-   ![Sign Up Page](C:\Users\DELL\Desktop\VistaRoomsClone\ReadmeImages\signuppage.gif)
+   ![Sign Up Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/signuppage.gif)
+4. After Login Navbar Looks Like
+   ![After Login Navbar Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/AfterLogin1.png)
+5. Profile Page
+   ![Profile Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/Profile.png)
+6. CityVillas Page
+   ![CityVillas Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/cityPage.gif)
+7. VillaDetails Page
+   ![VillaDetails Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/villadetails.png)   
+8. Event Page
+   ![Event Page](https://github.com/Anshuman-K/VistaRoomsClone/blob/main/ReadmeImages/Event.png)    
 
 # Features ✨
 
