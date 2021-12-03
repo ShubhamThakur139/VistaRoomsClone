@@ -2,9 +2,9 @@
   "name": "roomsapi",
   "version": "1.0.0",
   "description": "rooms REST API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "json:server": "json-server --watch rooms.json"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",

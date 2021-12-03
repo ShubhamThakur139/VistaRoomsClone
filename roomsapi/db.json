@@ -428,6 +428,15 @@
       "userPass": "123456789",
       "rescidentialCity": "LUDHIANA",
       "id": 6
+    },
+    {
+      "firstName": "Shubham",
+      "lastName": "Thakur",
+      "mobile": "6283830091",
+      "userEmail": "shubhamthakur2920@gmail.com",
+      "userPass": "Shibuu9648",
+      "rescidentialCity": "Ludhiana",
+      "id": 7
     }
   ]
 }
