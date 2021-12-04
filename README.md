@@ -12,7 +12,7 @@ In this project we have used the following tech stack.
 - Rest API: Creating rest api to store user data as well as villas information.
 
 # Deployement
-We deploy our app on Netlify. Click [Instahyre-clone](https://vistaroomclone.netlify.app/) to checkout our Project 
+We deploy our app on Netlify. Click [Vistaroom-clone](https://vistaroomclone.netlify.app/) to checkout our Project 
 
 # Snapshots 📷
 
