@@ -1,8 +1,6 @@
 # Vistarooms (Clone) 🌐
 
-A Request: If you want to run our website, first you have to come in roomsapi folder , then run this command `npm run json:server`, after this you can run the index file. (This is mandatory to get the details from api. Otherwise the website will not load the details.)
-
-Shortly, we will put this on netlify, and the respective link.
+**Vistaroom** a web application to rent luxurious villas at exotic locations on a monthly and daily basis.
 
 # Technology Stack Used 💻
 
@@ -12,6 +10,9 @@ In this project we have used the following tech stack.
 - CSS: Adding style to webpages to make page more attractive
 - JavaScript: Used for performing functionality like login signup and showing data
 - Rest API: Creating rest api to store user data as well as villas information.
+
+# Deployement
+We deploy our app on Netlify. Click [Instahyre-clone](https://vistaroomclone.netlify.app/) to checkout our Project 
 
 # Snapshots 📷
 
