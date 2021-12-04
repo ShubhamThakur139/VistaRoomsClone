@@ -4,7 +4,7 @@ if (id == null) {
 }
 id = parseInt(id);
 async function getUSerInfo() {
-  let res = await fetch("http://localhost:3000/users");
+  let res = await fetch("https://vistaroombackend.herokuapp.com/users");
   let data = await res.json();
   data.forEach((el) => {
     if (id === el.id) {
@@ -35,7 +35,7 @@ async function updateValue(e) {
   let dob = document.getElementById("dob").value;
   let gender = document.getElementById("gender").value;
 
-  let res = await fetch(`http://localhost:3000/users/${id}`, {
+  let res = await fetch(`https://vistaroombackend.herokuapp.com/users/${id}`, {
     method: "PATCH",
     body: JSON.stringify({
       firstName: firstName,

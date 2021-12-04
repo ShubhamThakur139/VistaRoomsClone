@@ -18,7 +18,7 @@ if (localStorage.getItem("loggedUser") == null) {
 // function to check is email exist or not
 async function isEmailExist(email) {
   let isEmail = false;
-  let res = await fetch("http://localhost:3000/users");
+  let res = await fetch("https://vistaroombackend.herokuapp.com/users");
   let data = await res.json();
   data.forEach(({ userEmail }) => {
     if (email === userEmail) {
@@ -32,7 +32,7 @@ async function isEmailExist(email) {
 // function to check is mobile number exist or not
 async function isPhoneExist(umobile) {
   let isTrue = false;
-  let res = await fetch("http://localhost:3000/users");
+  let res = await fetch("https://vistaroombackend.herokuapp.com/users");
   let data = await res.json();
   data.forEach(({ mobile }) => {
     if (umobile === mobile) {
@@ -93,7 +93,7 @@ async function addUser(event) {
       res_city
     );
     // setting url into url variable
-    let url = "http://localhost:3000/users";
+    let url = "https://vistaroombackend.herokuapp.com/users";
     // post data into api
     const response = await fetch(url, {
       method: "POST",
@@ -119,7 +119,7 @@ async function loginUser(event) {
     return;
   }
 
-  let res = await fetch("http://localhost:3000/users");
+  let res = await fetch("https://vistaroombackend.herokuapp.com/users");
   let data = await res.json();
 
   if (data === null) {

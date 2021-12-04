@@ -40,7 +40,7 @@ function appendData(data) {
 }
 // getting data through api
 async function getData() {
-  let data = await fetch("http://localhost:3000/villas");
+  let data = await fetch("https://vistaroombackend.herokuapp.com/villas");
   let res = await data.json();
   appendData(res);
 }
@@ -57,7 +57,7 @@ async function run() {
   let sort = document.getElementById("sortby");
   let data = sort.value;
   if (data === "ltoh") {
-    let data = await fetch("http://localhost:3000/villas");
+    let data = await fetch("https://vistaroombackend.herokuapp.com/villas");
     let res = await data.json();
     res.sort((a, b) => {
       return a.cost - b.cost;
@@ -65,7 +65,7 @@ async function run() {
     removeprev();
     appendData(res);
   } else if (data === "htol") {
-    let data = await fetch("http://localhost:3000/villas");
+    let data = await fetch("https://vistaroombackend.herokuapp.com/villas");
     let res = await data.json();
     res.sort((a, b) => {
       return b.cost - a.cost;
@@ -73,7 +73,7 @@ async function run() {
     removeprev();
     appendData(res);
   } else {
-    let data = await fetch("http://localhost:3000/villas");
+    let data = await fetch("https://vistaroombackend.herokuapp.com/villas");
     let res = await data.json();
     removeprev();
     appendData(res);
@@ -90,7 +90,7 @@ function rangeSlide(value) {
 async function filterRange(e) {
   let filterData = [];
   e.preventDefault();
-  let data = await fetch("http://localhost:3000/villas");
+  let data = await fetch("https://vistaroombackend.herokuapp.com/villas");
   let res = await data.json();
   let range_num = parseInt(r_value);
   res.forEach((element) => {
